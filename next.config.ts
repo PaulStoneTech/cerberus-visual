@@ -11,7 +11,15 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
 
-  /* other config options here */
+  output: 'standalone',
+
+  experimental: {
+    // instruct Next.js’s file tracer to include your JSON
+    outputFileTracingIncludes: {
+      // key is the route path without extension
+      'app/api/analyze/route': ['build/framework_patterns.json'],
+    },
+  },
 };
 
 export default nextConfig;
