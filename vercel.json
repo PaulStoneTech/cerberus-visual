@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/analyze/route.ts": {
-      "includeFiles": ["build/framework_patterns.json"]
+      "includeFiles": "build/framework_patterns.json"
     }
   }
 }
