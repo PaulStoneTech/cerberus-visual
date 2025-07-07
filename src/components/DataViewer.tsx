@@ -3,12 +3,6 @@
 
 import React from 'react'
 import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardContent,
-} from '@/components/ui/card'
-import {
   Tabs,
   TabsList,
   TabsTrigger,
@@ -34,13 +28,11 @@ import {
 } from 'recharts'
 import {
   FileText,
-  Cpu,
   Activity,
   Layers,
   BarChart3,
   Database,
   Code,
-  ChevronDown,
   TrendingUp,
   Zap
 } from 'lucide-react'

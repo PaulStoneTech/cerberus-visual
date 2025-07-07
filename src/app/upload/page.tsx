@@ -11,13 +11,6 @@ import {
   FormLabel,
   FormControl,
 } from '@/components/ui/form'
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardContent,
-} from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Switch } from '@/components/ui/switch'
 import {
@@ -35,7 +28,6 @@ import {
   Settings,
   Zap,
   CheckCircle,
-  AlertCircle,
   Code,
   Database,
   Activity,
