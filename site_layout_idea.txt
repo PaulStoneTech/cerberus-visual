@@ -1,0 +1,73 @@
+Top Navigation Bar
+
+Home
+A dashboard overview of what Cerberus does (quick stats: total analyses run, recent detections, latest heatmap).
+Upload & Analyze
+Load File: Form to upload a new binary or object file.
+Options: Toggles for “Verbose/Disassemble mode,” log‐level, etc.
+Submit: Kick off the analysis pipeline.
+Results
+Latest Report: Shows the most recent run.
+History: List of past analyses (date, filename, summary), with links to their full reports.
+Visualizations
+Heatmaps
+String Reference Heatmap
+Instruction Pattern Heatmap
+Memory Profile (if you integrate the memory‐profiler)
+CFG & Stride Patterns chart (e.g. power-of-two branch strides)
+String Matches
+Table or searchable list of all framework‐string hits (pattern, section, position), with JSON download.
+Detected Operations
+Listing of each NN operation found (Convolution, MatMul, Activation, Normalization), grouped by section/address, with drill-down view of the instruction window.
+Logs & Diagnostics
+Live console output (spdlog)
+Downloadable rotating log file
+Settings for log‐level, rotating size
+Settings / About
+Configuration paths (pattern JSON location, output dirs)
+Version info, authorship, license
+Sidebar (optional)
+If you prefer a collapsible sidebar:
+
+Dashboard
+Analysis ▶
+Upload File
+Recent Runs
+Patterns ▶
+String Patterns
+Branch/Stride Patterns
+Neural Ops ▶
+Convolution
+Matrix Multiply
+Activation
+Normalization
+Heatmaps ▶
+Logs
+Settings
+Page-by-Page Details
+Home / Dashboard
+High‐level counters (e.g., total files analyzed, operations detected)
+“Analyze New File” button
+Recent activity feed
+Upload & Analyze
+File selector + drag-and-drop
+Checkboxes for “Include string analysis” / “Run disassembly”
+Progress indicator once submitted
+Results / History
+Table of past tasks: Filename, Date, Status, Summary (counts of patterns found)
+Click into a row to view full detailed report
+Detailed Report
+Overview: file metadata, execution time, total SIMD vs. NN ops
+String Matches: JSON viewer + table
+Instruction Detections: list by type + address + window snapshot
+Heatmaps: embedded charts (bucketed address vs. count)
+Raw JSON Exports: download links for string_matches.json, section_hits.json, heatmap.json
+Visualizations
+Interactive charts (slider to select address range, toggle frameworks/ops)
+Download as PNG / JSON
+Logs & Diagnostics
+Live tail of the logfile
+Controls to clear logs, adjust verbosity
+Settings
+Edit configuration: pattern file path, log rotate size, thresholds for detections
+Save / load presets
